@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>Login</title>
-   <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <fieldset class="main-login-container">
-      <legend class="legend-login">Login Form</legend>
-    
+
+<body class="bg-image-loginpage">
+  <fieldset class="main-login-container">
+    <legend class="legend-login">Login Form</legend>
+
     <form action="" method="post">
       <div class="image-container">
-     <img class="avatar2" src="./images/img_avatar2.png" alt="login profile picture" width="200px" height="200px">
+        <img class="avatar2" src="./images/img_avatar2.png" alt="login profile picture" width="200px" height="200px">
       </div>
       <div class="input-container-login">
-     <label for="username">Username</label>
-     <input class="input-login" type="text" id="username" name="username" placeholder="Enter username" required> 
+        <label for="username">Username</label>
+        <input class="input-login" type="text" id="username" name="username" placeholder="Enter username" required>
 
-     <label for="psw">Password</label> 
-     <input class="input-login" type="password" name="psw" id="psw" placeholder="Enter Password" required>
+        <label for="psw">Password</label>
+        <input class="input-login" type="password" name="psw" id="psw" placeholder="Enter Password" maxlength="8"
+          required>
       </div>
-     <div>
-     <button type="submit">Login</button>
-     <label for="remember">
-      <input type="checkbox" name="remember" id="remember"> Remember me
-     </label>
-     </div>
-     <div>
-    <button type="button">Cencle</button>
-    <span>Forget <a href="#">Password?</a></span>
-     </div>
+      <div class="btn-rember-checkbix">
+        <button class="login-btn" type="submit">Login</button>
+        <label for="remember">
+          <input type="checkbox" name="remember" id="remember" checked> Remember me
+        </label>
+      </div>
+      <div class="btn-cancel-forget">
+        <button class="cancel-button" type="button"><a style="text-decoration: none; color: #000000;"
+            href="./index.html">Cancel</a></button>
+        <span class="forget-span">Forget <a href="#">Password?</a></span>
+      </div>
     </form>
 
-    </fieldset>
+  </fieldset>
 </body>
+
 </html>
